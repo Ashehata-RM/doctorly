@@ -1,0 +1,17 @@
+- hosts: all
+  become: yes
+  gather_facts: true
+  vars:
+    ansible_python_interpreter: python3
+  tasks: 
+    - name: Сopy compose files and folders
+      copy:
+        src: ./
+        dest: /home/doctorly/data/  
+    - name: Deploy Docker Compose Stack
+      docker_compose:
+        recreate: always
+        project_src: /home/doctorly/data/
+      vars:
+        files:
+          - docker-compose.yml

@@ -1,0 +1,25 @@
+Hello Alain,
+Here I am happy to share my experience in handling this tasks as the below 
+
+Task one
+- I bring an asp with my sql db docker-compose. and sorted in all files.
+- I run a playbook and to copy the docker-compose project then run docker-compose files.
+
+
+Task two 
+I create terraform code to handle the below
+- create an ec2 instance and excute ansible bash script.
+- create a bash script to install ansible and run ansible play book
+
+Task three.
+
+Tools: ( prometheus and grafana )
+
+Setup:
+- install node exporter in target Ubuntu machines.
+- define node exporter URL in prometheus.
+
+description
+- we can have an entity as prometheus and grafana with alert manager component.
+- Installation can be via Helm in k8s or docker-compose in single machine.
+- node exporter in all target instance can via ansible.
